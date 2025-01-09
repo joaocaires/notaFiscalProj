@@ -1,0 +1,28 @@
+*{
+    text-align: center;
+    background-color: darkgray;
+}
+
+input{
+    background-color: white;
+}
+
+.gerarNotaBtn{
+    background-color:dimgray;
+    margin: 25px;
+}
+
+.gerarNotaBtn:hover{
+    background-color: darkgray;
+}
+
+table{
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }

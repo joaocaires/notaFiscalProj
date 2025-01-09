@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Projeto Nota Fiscal</title>
+</head>
+<body>
+    <h1>Emissao De Nota Fiscal de Serviço (NFS-e)</h1>
+    <div>
+        <p>Digite o valor da venda</p>
+        <input id="valVenda" type="text" placeholder="Digite um valor: "/>
+
+        <p>Digite os itens que serão vendidos</p>
+        <input id="valItens" type="text" placeholder="Digite um valor: "/>
+
+        <p>Digite a Porcentagem do Imposto (IRPF)</p>
+        <input id="valIrpf" type="text" placeholder="Digite um valor: "/>
+
+        <p>Digite a Porcentagem do Imposto (PIS)</p>
+        <input id="valPis" type="text" placeholder="Digite um valor: "/>
+
+        <p>Digite a Porcentagem do Imposto (COFINS)</p>
+        <input id="valCofins" type="text" placeholder="Digite um valor: "/>
+
+        <p>Digite a Porcentagem do Imposto (INSS)</p>
+        <input id="valInss" type="text" placeholder="Digite um valor: "/>
+
+        <p>Digite a Porcentagem do Imposto (ISSQN)</p>
+        <input id="valIssqn" type="text" placeholder="Digite um valor: "/>
+        </br>
+
+        <button id="btnGeracaoNota" class="gerarNotaBtn">Gerar nota Fiscal</button>
+    </div>
+
+    <h1>Nota Fiscal Eletronica</h1>
+
+    <table>
+        <thead>
+          <tr>
+            <th>Itens vendidos</th>
+            <th>Valor da venda</th>
+            <th>Porcentagem do IRPF</th>
+            <th>Porcentagem do PIS</th>
+            <th>Porcentagem do COFINS</th>
+            <th>Porcentagem do INSS</th>
+            <th>Valor total com impostos aplicados</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="exibicaoItens"></td>
+            <td id="exibicaoValVenda"></td>
+            <td id="exibicaoIrpf"></td>
+            <td id="exibicaoPis"></td>
+            <td id="exibicaoCofins"></td>
+            <td id="exibicaoInss"></td>
+            <td id="exibicaoValTotal"></td>
+          </tr>
+        </tbody>
+      </table>
+
+    <script src="../backend/calculosImpostos.js"></script>
+</body>
+</html>
